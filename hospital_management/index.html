@@ -1,0 +1,280 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Hospital Management System</h1>
+            <p>Database Management Project</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Dashboard -->
+        <section class="dashboard">
+
+            <div class="card">
+                <span class="card-title">Total Patients</span>
+                <strong>5</strong>
+            </div>
+
+            <div class="card">
+                <span class="card-title">Total Doctors</span>
+                <strong>4</strong>
+            </div>
+
+            <div class="card">
+                <span class="card-title">Appointments</span>
+                <strong>5</strong>
+            </div>
+
+        </section>
+
+
+        <!-- Patients -->
+        <section class="database-section">
+
+            <div class="section-header">
+                <div>
+                    <h2>Patients</h2>
+                    <p>Patient records from the <b>patients</b> table.</p>
+                </div>
+
+                <button>+ Add Patient</button>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Phone</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Sifat Ahmed</td>
+                            <td>21</td>
+                            <td>Male</td>
+                            <td>01711111111</td>
+                            <td>Chandpur</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Nusrat Jahan</td>
+                            <td>25</td>
+                            <td>Female</td>
+                            <td>01822222222</td>
+                            <td>Dhaka</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Rahim Uddin</td>
+                            <td>45</td>
+                            <td>Male</td>
+                            <td>01933333333</td>
+                            <td>Chittagong</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Mim Akter</td>
+                            <td>30</td>
+                            <td>Female</td>
+                            <td>01644444444</td>
+                            <td>Cumilla</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>Tanvir Hasan</td>
+                            <td>35</td>
+                            <td>Male</td>
+                            <td>01555555555</td>
+                            <td>Feni</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- Doctors -->
+        <section class="database-section">
+
+            <div class="section-header">
+                <div>
+                    <h2>Doctors</h2>
+                    <p>Doctor records from the <b>doctors</b> table.</p>
+                </div>
+
+                <button>+ Add Doctor</button>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Specialization</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Dr. Ahmed Karim</td>
+                            <td>Cardiology</td>
+                            <td>01710000001</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Dr. Farzana Rahman</td>
+                            <td>Neurology</td>
+                            <td>01810000002</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Dr. Mahmud Hasan</td>
+                            <td>Dermatology</td>
+                            <td>01910000003</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Dr. Sadia Islam</td>
+                            <td>Psychiatry</td>
+                            <td>01610000004</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- Appointments -->
+        <section class="database-section">
+
+            <div class="section-header">
+                <div>
+                    <h2>Appointments</h2>
+                    <p>Combined appointment records using patients and doctors.</p>
+                </div>
+
+                <button>+ New Appointment</button>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Patient</th>
+                            <th>Doctor</th>
+                            <th>Specialization</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Sifat Ahmed</td>
+                            <td>Dr. Ahmed Karim</td>
+                            <td>Cardiology</td>
+                            <td>18 Sep 2026</td>
+                            <td><span class="status scheduled">Scheduled</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Nusrat Jahan</td>
+                            <td>Dr. Farzana Rahman</td>
+                            <td>Neurology</td>
+                            <td>19 Sep 2026</td>
+                            <td><span class="status scheduled">Scheduled</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Rahim Uddin</td>
+                            <td>Dr. Ahmed Karim</td>
+                            <td>Cardiology</td>
+                            <td>20 Sep 2026</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Mim Akter</td>
+                            <td>Dr. Mahmud Hasan</td>
+                            <td>Dermatology</td>
+                            <td>21 Sep 2026</td>
+                            <td><span class="status scheduled">Scheduled</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>Tanvir Hasan</td>
+                            <td>Dr. Sadia Islam</td>
+                            <td>Psychiatry</td>
+                            <td>22 Sep 2026</td>
+                            <td><span class="status scheduled">Scheduled</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Hospital Management System &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
+```
